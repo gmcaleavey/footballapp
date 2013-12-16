@@ -59,4 +59,5 @@ Footballapp::Application.routes.draw do
   #     resources :products
   #   end
 
+  DELETE /posts/:id(.:format)      posts#destroy
 end
