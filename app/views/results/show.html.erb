@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Teams:</strong>
+  <%= @result.Teams %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @result.Score %>
+</p>
+
+<h2>Comments</h2>
+<%= render @result.comments %>
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+  <%= link_to 'Back', results_path %>
