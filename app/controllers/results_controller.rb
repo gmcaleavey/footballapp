@@ -60,7 +60,6 @@ class ResultsController < ApplicationController
     @result.destroy
 
     redirect_to results_path
-    end
   end
 
   private
